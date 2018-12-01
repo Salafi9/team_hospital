@@ -60,4 +60,4 @@ urlpatterns = patterns('',
 
 admin.site.site_header = 'Hackday 2018 Kano'                      # waje: "login head"
 admin.site.index_title = 'Hackday 2018 Kano Admin Control Interface'              # waje: "Header da title"
-admin.site.site_title = 'Hackday 2018 Kano'                             # waje: "Bayan | site title"
+admin.site.site_title = 'Hackday 2018 Kano'                             # waje: "Bayan | site title" 
