@@ -9,7 +9,7 @@ from healthnet import views_message
 from healthnet import views_prescription
 from healthnet import views_profile
 from healthnet import views_medicalInfo
-
+from django.contrib import admin
 
 urlpatterns = patterns('',
                        url(r'^$', views.login_view, name='index'),
@@ -57,3 +57,7 @@ urlpatterns = patterns('',
                        url(r'^medicalinfo/update/$', views_medicalInfo.update_view, name='medicalinfo/update'),
                        url(r'^medicalinfo/patient/$', views_medicalInfo.patient_view, name='medicalinfo/patient'),
 )
+
+admin.site.site_header = 'Hackday 2018 Kano'                      # waje: "login head"
+admin.site.index_title = 'Hackday 2018 Kano Admin Control Interface'              # waje: "Header da title"
+admin.site.site_title = 'Hackday 2018 Kano'                             # waje: "Bayan | site title"
